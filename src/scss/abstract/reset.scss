@@ -1,0 +1,285 @@
+/* ----------------------------- */
+/* ==Reset (based on knacss)                */
+/* ----------------------------- */
+$font-size-html: 100%;
+$font-size-base: 1rem;
+/*
+ * 1. Switch to border-box model for all elements
+ * 2. Avoid min-width: auto on flex and grid items
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* 1 */
+  min-width: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Remove the grey highlight on links in iOS 
+ * 2. Prevent orientation font changes in iOS
+ * 3. Breaks words to prevent overflow in all browsers
+ */
+
+html {
+  font-size: $font-size-html;
+  -webkit-tap-highlight-color: transparent;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  overflow-wrap: break-word;
+  /* 3 */
+}
+
+iframe,
+img,
+input,
+select,
+textarea {
+  height: auto;
+}
+
+img {
+  border-style: none;
+}
+
+/**
+ * Remove the border on iframes in all browsers
+ */
+
+iframe {
+  border-style: none;
+}
+
+/*
+ * Fill color matching to text color
+ */
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/*
+ * Tables
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+/* ----------------------------- */
+/* ==Reset (forms)               */
+/* ----------------------------- */
+
+/*
+ * Remove the tapping delay on clickable elements in all browsers .
+ */
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/*
+ * 1. Change the inconsistent appearance in all browsers.
+ * 2. Add typography inheritance in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  background-color: transparent; /* 1 */
+  color: inherit; /* 1 */
+  font-family: inherit; /* 2 */
+  font-size: inherit; /* 2 */
+  line-height: inherit; /* 2 */
+  letter-spacing: inherit; /* 2 */
+  vertical-align: middle;
+}
+
+/*
+ * Basic User Interface reset
+ */
+
+button,
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  border: 0;
+}
+
+/*
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+pre {
+  tab-size: 2;
+  white-space: pre-wrap;
+  line-height: normal;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+/*
+ * Show overflow in IE/Edge
+ */
+
+button,
+input {
+  overflow: visible;
+}
+
+/* 
+ * Remove the inheritance of text transform in Firefox
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+form,
+fieldset {
+  border: none;
+}
+
+fieldset {
+  margin: 0;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  border: 0;
+  color: inherit;
+  white-space: normal;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+  white-space: pre-wrap;
+}
+
+progress {
+  display: inline-block;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+/* ----------------------------- */
+/* Form oddities                 */
+/* ----------------------------- */
+
+/*
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/*
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/*
+ * Remove the additional :invalid styles in Firefox.
+ */
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
